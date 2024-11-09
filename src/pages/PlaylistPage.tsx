@@ -22,7 +22,7 @@ const PlaylistPage: React.FC = () => {
         setDownloadingTracks((prev) => ({ ...prev, [trackId]: 0 })); // 진행률 0으로 시작
 
         // 다운로드 시뮬레이션 (실제 API 사용 시, 여기에서 API 호출)
-        const downloadInterval = setInterval(() => {
+        const downloadInterval = setInterval((): any => {
             setDownloadingTracks((prev) => {
                 const progress = (prev[trackId] || 0) + 10;
                 if (progress >= 100) {
