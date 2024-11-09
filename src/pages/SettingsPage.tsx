@@ -1,7 +1,7 @@
 // src/pages/SettingsPage.tsx
 import React from 'react';
 import { Container } from '@mui/material';
-import SettingsForm from "../componets/Settings/SettingsForm";
+import SettingsForm from "../components/Settings/SettingsForm";
 
 const SettingsPage: React.FC = () => {
     return (
